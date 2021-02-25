@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>TOTO</title> 	
+      <link rel="icon" href="KL19.jpg" sizes="10x10">
+
+  <style>
+ 
+   body {margin: 1%; 
+         padding: 1%;
+         font-size: 180%;
+         font-weight: bold;
+         text-align: center;
+         background-image: url("乡村之夜.jpg"); 
+         background-size: 100%;  
+         background-repeat: no-repeat; 
+         background-color: #000;                         
+         background-position: center; 
+         opacity: 1;
+         color: white; }
+   
+   header{color: yellow; }
+ 
+   h1{ background-color: red;
+       font-size: 150%;
+        padding: 10px;}
+ 
+  button{border-radius: 15px 15px; }
+
+  .mySelect{background-color: lightgreen;
+       color: black;
+       text-decoration: bold;
+       font-size: 20px;
+       font-weight: bold;  
+       padding: 6px; 
+       width: 140px; }
+        
+  p{ margin: 0px; padding: 0px;}
+ 
+  div{font-size: 100%;
+       box-sizing: border-box; }
+
+  button{ background: yellow;
+           font-weight: bold;
+           font-size: 80%; }
+
+ #bottom{ position: fixed;
+          margin: 1%; 
+          padding: 1%; }
+ 
+   footer{margin-top: 250px;
+          color: lightgreen; 
+          text-align: left;  
+                      }
+
+  a:link{color: yellow; }
+ 
+  .demo{ background-color: grey;
+         opacity: 1; 
+         margin: 1%; 
+         padding: 1%; }
+ 
+ </style>
+ </head>  
+ 
+ <body>
+
+  <header>  
+     <h1>SINGAPOREPOOLS</h1> 
+     <p>$8 MILLION</span>
+     <p>HONG PAO DRAW</span>
+     <p>26 Feb 2021</span>
+  </header>
+
+  <section id="top">
+  <div class='container'> 
+  <br>	
+     <form>		
+     <label>System Entry :
+     <select onchange="system()">
+	<option value=''></option>
+ 	<option value='6'>System 6</option>
+ 	<option value='7'>System 7</option>
+	<option value='8'>System 8</option>
+ 	<option value='9'>System 9</option>
+        <option value='10'>System 10</option>
+        <option value='11'>System 11</option>
+        <option value='12'>System 12</option>
+     </select>
+     </label> 
+     <button type="button" onclick="system()">Quick Pick</button>   
+     <button type="button" onclick="refresh()">Refresh</button>
+     </form> 
+  </div>
+  </section>
+
+  <div id="demo"></div>  
+  <div id="DEMO"></div>
+
+<!----  My Java Script -------->
+
+   <script>
+
+   function refresh() { 
+   location.reload(); }
+
+   /*function quickpick() { 
+   var x = document.getElementById("mySelect");  
+   var y = x.selectedIndex;
+   document.getElementById("demo").innerHTML = x.options[y].text;  }*/
+   
+   /* onchange Output */
+   function system() {
+   if (value = 7) {
+   return system7() }
+
+   if (value = 8) {
+   return system8()  } }
+
+   function system7() {
+   var i, rand, temp, nums = []
+   var str = '\n\nYour Lucky Number are :\n'
+   for ( i = 1; i < 50 ; i++ ) { nums[i] = i }
+
+   for ( i = 1; i < 50 ; i++ ) {
+   rand = Math.ceil(Math.random() * 49) 
+   temp = nums[i]
+   nums[i]  = nums[rand]
+   nums[rand] = temp } 
+
+   for ( i = 1; i < 8; i++ ) { 
+   str += nums[i]
+   if (i !==7) {str +='\n &nbsp;\n'} 
+
+   console.log(str);  
+   document.getElementById("DEMO").innerHTML = str; } } 
+
+   function system8() {
+   var i, rand, temp, nums = []
+   var str = '\n\nYour Lucky Number are :\n'
+   for ( i = 1; i < 50 ; i++ ) { nums[i] = i }
+
+   for ( i = 1; i < 50 ; i++ ) {
+   rand = Math.ceil(Math.random() * 49) 
+   temp = nums[i]
+   nums[i]  = nums[rand]
+   nums[rand] = temp } 
+
+   for ( i = 1; i < 9; i++ ) { 
+   str += nums[i]
+   if (i !==8) {str +='\n &nbsp;\n'} 
+
+   console.log(str);  
+   document.getElementById("DEMO").innerHTML = str; } } 
+
+   </script>
+
+   <footer>
+   <p>
+      This page was created by Dino Soh. To learn about Web Design, visit <br> &nbsp;
+      <a href="http://www.intro-webdesign.com/">Intro to Web Design</a>
+   </p>
+   </footer>
+  
+ </body> 
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	   
+ 
